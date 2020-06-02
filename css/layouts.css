@@ -1,0 +1,3 @@
+section:not(.visible){
+  display: none;
+}
