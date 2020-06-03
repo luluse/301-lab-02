@@ -2,6 +2,9 @@
 
 Collaboration: Lulu Sevignon & Paul Rest
 
+## How to use 
+
+Run program from index.html
 
 ### Lab-02: jQuery Selectors and Events
 #### Feature 1: Display images
@@ -33,9 +36,9 @@ Actual time needed to complete: 20 min
 #### Feature 3: Styling with Flexbox
 
 Estimate of time needed to complete: 30 min
-Actual time needed to complete: 
+Actual time needed to complete: 20 min
 
 #### Feature 4: Sort the images
 
 Estimate of time needed to complete: 1 hour
-Actual time needed to complete: 
+Actual time needed to complete: 45 min
