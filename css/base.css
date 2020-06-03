@@ -4,6 +4,8 @@ font-family: 'Staatliches', cursive; */
 
 main {
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'PT Sans', sans-serif;
   /* width: 960px; */
 }
