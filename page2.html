@@ -8,6 +8,13 @@
   <link href="css/layouts.css" rel="stylesheet" type="text/CSS" />
   <link href="css/modules.css" rel="stylesheet" type="text/CSS" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik:wght@500&family=Staatliches&display=swap" rel="stylesheet">
+  <script id="horn-template" type="text/x-tmpl-mustache">
+    <section>
+      <h2>{{title}}</h2>
+      <img src={{image_url}} alt="">
+      <p>{{desciption}}</p>
+    </section>
+  </script>
   <title>The Gallery of horns</title>
 </head>
 <body>
@@ -30,6 +37,7 @@
     </section>
   </footer>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/mustache@latest"></script>
   <script src="js/app2.js"></script>
 </body>
 </html>

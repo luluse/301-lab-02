@@ -14,14 +14,10 @@ function Horns(obj) {
   this.addKeyword(this.keyword);
 }
 
-Horns.prototype.render = function() {
-  const myTemplate = $(templateHTMLID).html();
-  const $newSection = $(`<section>${myTemplate}</section`);
-  $newSection.find('h2').text(this.title);
-  $newSection.find('p').text(this.description);
-  $newSection.find('img').attr('src', this.image_url);
-  $newSection.addClass(`${this.keyword.toLowerCase()} visible`);
-  $('main').append($newSection);
+Horns.prototype.render = function(){
+  let hornTemplate = $(templateHTMLID).html();
+  let html = Mustache.render(hornTemplate, this);
+  $('main').append(html);
 };
 
 Horns.prototype.renderKeyword = function(){

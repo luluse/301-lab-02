@@ -28,7 +28,7 @@ Actual time needed to complete: 15 min
 #### Feature 2: Templating
 
 Estimate of time needed to complete: 30 min
-Actual time needed to complete: 
+Actual time needed to complete: 20 min
 
 #### Feature 3: Styling with Flexbox
 
