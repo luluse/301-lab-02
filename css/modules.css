@@ -1,0 +1,19 @@
+/* #page {
+  background-color:
+  height: 50px;
+  width: 80px;
+} */
+
+#page {
+  background:  rgb(31, 8, 182);
+  box-shadow: 0 2px 0 rgb(72, 160, 214);
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  transition: all .1s linear;
+}
+#page:hover {
+  box-shadow: 0 1px 0 rgb(31, 8, 182);
+  transform: translateY(2px);
+}

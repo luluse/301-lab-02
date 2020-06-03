@@ -41,7 +41,7 @@ $.ajax('data/page-2.json', {method: 'GET', dataType: 'JSON'})
 
 $(document).ready(function(){
   $('#keywords').on('change', function(){
-    $('main').children().not(':first-child').remove();
+    $('main').children().remove();
     allHorns.forEach(oneHorn => {
       if(oneHorn.keyword === this.value){
         oneHorn.render();
