@@ -22,20 +22,20 @@ Actual time needed to complete: 1 hour
 ### Lab: 03 - Flexbox and Templating
 #### Feature 1: Pagination
 
-Estimate of time needed to complete: 
-Actual time needed to complete: 
+Estimate of time needed to complete: 1.5 hour
+Actual time needed to complete: 15 min
 
 #### Feature 2: Templating
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 30 min
 Actual time needed to complete: 
 
 #### Feature 3: Styling with Flexbox
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 30 min
 Actual time needed to complete: 
 
 #### Feature 4: Sort the images
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1 hour
 Actual time needed to complete: 
