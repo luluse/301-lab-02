@@ -32,12 +32,30 @@ Horns.prototype.addKeyword = function(){
   }
 };
 
+Horns.sortByHorns = function() {
+  allHorns.sort((oneHorn, anotherHorn) => {
+    return oneHorn.horns - anotherHorn.horns;
+  })
+};
+
+Horns.sortByTitle = function(){
+  allHorns.sort((oneHorn, anotherHorn) =>{
+    return oneHorn.title > anotherHorn.title ? 1 : -1;
+  })
+};
+
 $.ajax('data/page-1.json', {method: 'GET', dataType: 'JSON'})
   .then(jsonHorns => {
     jsonHorns.forEach(oneHornObj => {
-      new Horns(oneHornObj).render();
+      new Horns(oneHornObj);
+    })
+    Horns.sortByTitle();
+    Horns.sortByHorns();
+    allHorns.forEach(oneHorn => {
+      oneHorn.render();
     })
   })
+
 
 $(document).ready(function(){
   $('#keywords').on('change', function(){
@@ -48,4 +66,16 @@ $(document).ready(function(){
       }
     });
   });
+  $('#sort').on('change', function(){
+    $('main').children().remove();
+    let sortBy = this.value;
+    if (sortBy.toLowerCase() === 'horns'){
+      Horns.sortByHorns();
+    } else if (sortBy.toLowerCase() === 'title'){
+      Horns.sortByTitle();
+    }
+    allHorns.forEach(oneHorn => {
+      oneHorn.render();
+    })
+  })
 });
