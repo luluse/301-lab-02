@@ -1,3 +1,37 @@
-section:not(.visible){
+#horn-template {
   display: none;
+}
+
+select {
+  margin: 30px 0px 30px 0px;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+img {
+  width: 250px;
+}
+
+section {
+  text-align: center;
+  /* border: 1px solid black; */
+  float: left;
+  height: 500px;
+  margin: auto;
+  width: 300px;
+}
+
+p {
+  margin: 5% 15px 0px 15px;
+}
+
+h2 {
+  font-family: 'Staatliches', cursive;
+  margin: 15px;
+  font-size: 25px;
 }
